@@ -35,6 +35,7 @@ public class ADBWifi {
         runCommand(connectCommand);
 
         scanner.close();
+        System.out.println("");
     }
 
     private static void runCommand(String command) {
