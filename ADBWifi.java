@@ -14,13 +14,13 @@ public class ADBWifi {
         System.out.println("~*~~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~*~");
         System.out.println("");
         System.out.println(" * INSTRUCTION * ");
-        System.out.println("1. เสียบสาย USB android กับ computer");
-        System.out.println("2. เช็ค IP Address จาก Setting -> General หรือ Setting -> About");
-        System.out.println("3. กรอก IP Address");
-        System.out.println("4. ทดลองถอดสาย USB แล้วเลือก Device ใน Android Studio เพื่อเช็ค Logcat ว่า log ขึ้นหรือไม่");
-        System.out.println("5. ถ้าไม่สำเร็จ ปิด Android studio แล้วทำใหม่อีกครั้ง");
+        System.out.println("1. Connect your Android device via USB cable to the computer.");
+        System.out.println("2. Check the IP Address from Settings -> General or Settings -> About.");
+        System.out.println("3. Enter the IP Address.");
+        System.out.println("4. Disconnect the USB cable and select the device in Android Studio to check if the logcat appears.");
+        System.out.println("5. If unsuccessful, close Android Studio and try again.");
         System.out.println("");
-        System.out.print("กรอก IP Address ของ WIFI จากเครื่อง Android: ");
+        System.out.print("Enter the IP Address of the Android device: ");
         String ipAddress = scanner.nextLine();
 
         System.out.println("");
