@@ -53,16 +53,12 @@ public class ADBWifi {
             Process process = processBuilder.start();
             BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
             String line;
-            while (!isNullOrEmpty(line = reader.readLine())) {
+            while ((line = reader.readLine()) != null) {
                 System.out.println("- " + line);
             }
             process.waitFor();
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
-    }
-
-    private static boolean isNullOrEmpty(String line) {
-        return line == null || line.isBlank();
     }
 }
